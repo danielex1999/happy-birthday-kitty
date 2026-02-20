@@ -1,28 +1,18 @@
+const intervalo = setInterval(actualizar, 1000);
+
 function obtenerCumple() {
-    const ahora = new Date();
-
-    const ahoraPeru = new Date(
-        ahora.toLocaleString("en-US", { timeZone: "America/Lima" })
-    );
-
-    let anio = ahoraPeru.getFullYear();
-
-    let cumple = new Date(anio, 1, 19, 20, 52, 0);
-
-    if (cumple < ahoraPeru) {
-        cumple = new Date(anio + 1, 1, 19, 20, 52, 0);
-    }
-
-    return cumple;
+    // 👉 FECHA FIJA (importante para que después no se reinicie)
+    return new Date(2026, 1, 27, 20, 15, 0);
 }
 
 function mostrarCumple() {
-    document.getElementById("contador").style.display = "none";
+    document.getElementById("tiempo-de-espera").style.display = "none";
     document.getElementById("cumple").style.display = "block";
 }
 
 function actualizar() {
     const ahora = new Date();
+
     const ahoraPeru = new Date(
         ahora.toLocaleString("en-US", { timeZone: "America/Lima" })
     );
@@ -30,12 +20,9 @@ function actualizar() {
     const cumple = obtenerCumple();
     const diff = cumple - ahoraPeru;
 
+    // 🔥 SI YA PASÓ
     if (diff <= 0) {
         clearInterval(intervalo);
-
-        // 🔥 Guardamos estado
-        localStorage.setItem("cumpleActivo", "true");
-
         mostrarCumple();
         return;
     }
@@ -51,10 +38,5 @@ function actualizar() {
     document.getElementById("seconds").innerText = String(segundos).padStart(2, '0');
 }
 
-// 🔥 Al cargar la página
-if (localStorage.getItem("cumpleActivo") === "true") {
-    mostrarCumple();
-} else {
-    var intervalo = setInterval(actualizar, 1000);
-    actualizar();
-}
+// 🔥 IMPORTANTE: ejecutar al cargar
+actualizar();

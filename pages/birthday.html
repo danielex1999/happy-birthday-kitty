@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/css/birthday.css">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
+
 <body>
 
   <header>
@@ -29,20 +30,41 @@
     <button>Explorar</button>
   </section> -->
 
-<section class="contador" id="cuenta-regresiva">
-  <canvas id="fuegosCanvas"></canvas>
-  <img src="/assets/images/hello-kitty-birthday-cake-drawing-hello-afe8bca23d15b5e389fe01ab42e82c8f.png" alt="" srcset="">
-  <div class="contenido">
-    <span id="days">00</span> días
-    <span id="hours">00</span> horas
-    <span id="minutes">00</span> minutos
-    <span id="seconds">00</span> segundos
+  <section class="contador" id="cuenta-regresiva">
+    <canvas id="fuegosCanvas"></canvas>
+    <img src="/assets/images/hello-kitty-birthday-cake-drawing-hello-afe8bca23d15b5e389fe01ab42e82c8f.png" alt=""
+      srcset="">
+    <div class="contenido">
+      <div class="container-timer" id="tiempo-de-espera">
+        <div class="box">
+          <div id="days" class="flip">00</div>
+          <span>DIAS</span>
+        </div>
 
-    <p>Contando cada segundo para celebrar tus 22 🎂💖</p>
+        <div class="box">
+          <div id="hours" class="flip">00</div>
+          <span>HORAS</span>
+        </div>
 
-    <button onclick="lanzarFuegos()">🎆 Ver fuegos artificiales 🎆</button>
-  </div>
-</section>
+        <div class="box">
+          <div id="minutes" class="flip">00</div>
+          <span>MINUTOS</span>
+        </div>
+
+        <div class="box">
+          <div id="seconds" class="flip">00</div>
+          <span>SEGUNDOS</span>
+        </div>
+      </div>
+      <div id="cumple" style="display:none;">
+        <h2>🎉 Llegaste 💖</h2>
+        <p>Hoy celebramos tus 22 🎂✨</p>
+      </div>
+      <p>Contando cada segundo para celebrar tus 22 🎂💖</p>
+
+      <button onclick="lanzarFuegos()">🎆 Ver fuegos artificiales 🎆</button>
+    </div>
+  </section>
 
   <section class="section">
     <h2>🎀 Personajes</h2>
@@ -99,6 +121,7 @@
   </footer>
 
 </body>
-<script src="/js/test.js"></script>
 <script src="/js/birthday-confetti.js"></script>
+<script src="/js/test.js"></script>
+
 </html>
