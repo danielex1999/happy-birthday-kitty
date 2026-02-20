@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
+  <title>Sanrio Style</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/birthday.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 <body>
-  
+
+  <header>
+    <img src="/assets/images/hello-kitty-gif-11 (1).gif" alt="" srcset="">
+    <nav>
+      <a href="#hero">Inicio</a>
+      <a href="#cuenta-regresiva">Cuenta regresiva</a>
+      <a href="#">Sobre ella</a>
+      <a href="#">Mensaje</a>
+      <a href="#">Sorpresa</a>
+    </nav>
+  </header>
+
+  <!-- <section class="hero">
+    <h1>✨ Bienvenido ✨</h1>
+    <p>El mundo más cute 💖</p>
+    <button>Explorar</button>
+  </section> -->
+
+<section class="contador" id="cuenta-regresiva">
+  <canvas id="fuegosCanvas"></canvas>
+  <img src="/assets/images/hello-kitty-birthday-cake-drawing-hello-afe8bca23d15b5e389fe01ab42e82c8f.png" alt="" srcset="">
+  <div class="contenido">
+    <span id="days">00</span> días
+    <span id="hours">00</span> horas
+    <span id="minutes">00</span> minutos
+    <span id="seconds">00</span> segundos
+
+    <p>Contando cada segundo para celebrar tus 22 🎂💖</p>
+
+    <button onclick="lanzarFuegos()">🎆 Ver fuegos artificiales 🎆</button>
+  </div>
+</section>
+
+  <section class="section">
+    <h2>🎀 Personajes</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.imgur.com/fY7Z3WJ.png">
+        <h3>Hello Kitty</h3>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/5L6U6R8.png">
+        <h3>My Melody</h3>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/K9KQ8eS.png">
+        <h3>Kuromi</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <div id="contador">
+    <span id="days"></span> :
+    <span id="hours"></span> :
+    <span id="minutes"></span> :
+    <span id="seconds"></span>
+  </div>
+
+
+  <div id="cumple" style="display:none;">
+    <h1>🎉 Llegaste 🎂</h1>
+    <p>Es tu día 💖</p>
+  </div>
+
+  <section class="section">
+    <h2>🛍 Productos</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="/assets/images/hello-kitty-birthday-cake-drawing-hello-afe8bca23d15b5e389fe01ab42e82c8f.png">
+        <h3>Peluche</h3>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/7p2Dk4R.png">
+        <h3>Taza</h3>
+      </div>
+      <div class="card">
+        <img src="https://i.imgur.com/fF4s8tM.png">
+        <h3>Accesorios</h3>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    💖 Hecho con amor
+  </footer>
+
 </body>
+<script src="/js/test.js"></script>
+<script src="/js/birthday-confetti.js"></script>
 </html>
