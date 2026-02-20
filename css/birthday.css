@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #fff5f7;
+  background: #ffffff;
   color: #333;
 }
 
@@ -83,6 +83,7 @@ section#inicio-micaela {
   background-position: 115%;
   display: flex;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 .row-header-info {
