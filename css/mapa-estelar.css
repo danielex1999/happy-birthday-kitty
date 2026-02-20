@@ -27,6 +27,10 @@ body {
     flex-direction: column;
 }
 
+img#mapa-estelar {
+    width: 30%;
+}
+
 h1 {
     color: #d0d0d0;
     font-family: "PT Sans", sans-serif;
@@ -43,6 +47,20 @@ h2 {
     margin: 10px 0px;
 }
 
+.coordenadas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coordenadas p {
+    margin: 10px 0px;
+    font-family: "Betania Patmos", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
 /*Formato movil*/
 @media screen and (max-width: 450px) {
     img#mapa-estelar {
@@ -51,5 +69,13 @@ h2 {
 
     h1 {
         text-align: center;
+    }
+
+    .coordenadas {
+        margin-top: 10px;
+    }
+
+    .coordenadas p {
+        margin: 5px 0px;
     }
 }
