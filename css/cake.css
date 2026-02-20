@@ -133,3 +133,9 @@ body {
         font-size: 1.4em;
     }
 }
+
+@media (min-width: 1200px) {
+    .velas{
+        top: 54%;
+    }
+}

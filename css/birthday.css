@@ -293,6 +293,66 @@ footer {
   background: rgba(0, 0, 0, 0.2);
 }
 
+
+
+/*Formato Laptop*/
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
+  /* Sección de Inicio */
+  img.love_float {
+    position: absolute;
+    width: 50px;
+    bottom: 0%;
+    left: 0%;
+  }
+
+  img.paw_float {
+    position: absolute;
+    width: 50px;
+    bottom: 5%;
+    right: 0%;
+  }
+
+  h1.header-h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+
+  h2.header-h2 {
+    font-size: 26px;
+    margin-top: 5px;
+  }
+
+  h3.header-h3 {
+    font-size: 20px;
+    font-weight: 100;
+  }
+
+  h3.header-h3 p {
+    margin-top: 10px;
+  }
+
+  /* Sección de Cuenta Regresiva */
+  #cuenta-regresiva img {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .container-timer .box .flip {
+    width: 60px;
+    height: 60px;
+    font-size: 25px;
+    line-height: 60px;
+  }
+
+  .container-timer .box span {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
+}
+
+/*Formato Movil*/
 @media (max-width: 900px) {
 
   /* HEADER */

@@ -2,8 +2,8 @@ const intervalo = setInterval(actualizar, 1000);
 
 function obtenerCumple() {
     // 👉 FECHA FIJA (importante para que después no se reinicie)
-    // return new Date(2026, 1, 27, 20, 15, 0);
-    return new Date(2026, 1, 19, 23, 48, 0);
+    return new Date(2026, 1, 27, 20, 15, 0);
+    // return new Date(2026, 1, 19, 23, 48, 0);
 }
 
 function mostrarCumple() {

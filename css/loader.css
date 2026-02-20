@@ -41,7 +41,7 @@
     height: 50%;
     background-size: 200%;
     background-repeat: no-repeat;
-    background-image: url('/assets/images/loader.png');
+    background-image: url('/assets/images/animations/loader.png');
 }
 
 /* HEAD */
