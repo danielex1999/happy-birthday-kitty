@@ -25,9 +25,14 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 img#mapa-estelar {
+    width: 30%;
+}
+
+img#spotify-code {
     width: 30%;
 }
 
@@ -51,6 +56,7 @@ h2 {
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-;
 }
 
 .coordenadas p {
@@ -59,6 +65,18 @@ h2 {
     font-weight: 400;
     font-style: normal;
     letter-spacing: 2px;
+}
+
+.container-data {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-spotify {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /*Formato movil*/
@@ -77,5 +95,9 @@ h2 {
 
     .coordenadas p {
         margin: 5px 0px;
+    }
+
+    img#spotify-code {
+        width: 90%;
     }
 }
