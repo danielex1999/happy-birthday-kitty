@@ -29,9 +29,10 @@ body {
 
 .contador p {
     margin-top: 10px;
-    font-size: 18px;
-    font-family: "Life Savers", serif;
-    font-weight: 400;
+    font-size: 24px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
     font-style: normal;
 }
 
@@ -139,6 +140,6 @@ body {
 
     .contador p {
         font-size: 20px;
-        padding: 20px;
+        padding: 15px 50px;
     }
 }
