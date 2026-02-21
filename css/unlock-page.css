@@ -121,12 +121,12 @@ body {
     .container-timer .box .flip {
         width: 50px;
         height: 50px;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 50px;
     }
 
     .container-timer .box span {
-        font-size: 12px;
+        font-size: 16px;
         margin-top: 5px;
         text-align: center;
     }
