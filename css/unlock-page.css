@@ -44,6 +44,9 @@ body {
     background: #ff6fa5;
     color: white;
     font-weight: bold;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
     cursor: pointer;
 }
 
