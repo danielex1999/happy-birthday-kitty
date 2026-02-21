@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/unlock-page.css">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/logos/icon.avif">
+    <title>Cuenta Regresiva</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="contador" id="cuenta-regresiva">
+        <canvas id="fuegosCanvas"></canvas>
+        <img src="/assets/images/hello-kitty-cake.png" alt="" srcset="">
+        <div class="contenido">
+            <div class="container-timer" id="tiempo-de-espera">
+                <div class="box">
+                    <div id="days" class="flip">00</div>
+                    <span>DIAS</span>
+                </div>
+
+                <div class="box">
+                    <div id="hours" class="flip">00</div>
+                    <span>HORAS</span>
+                </div>
+
+                <div class="box">
+                    <div id="minutes" class="flip">00</div>
+                    <span>MINUTOS</span>
+                </div>
+
+                <div class="box">
+                    <div id="seconds" class="flip">00</div>
+                    <span>SEGUNDOS</span>
+                </div>
+            </div>
+            <div id="cumple" style="display:none;">
+                <h2>🎉 Llegaste 💖</h2>
+                <p>Hoy celebramos tus 22 🎂✨</p>
+            </div>
+            <p>Contando cada segundo para celebrar tus 22 🎂💖</p>
+
+            <button onclick="lanzarFuegos()">🎆 Ver fuegos artificiales 🎆</button>
+        </div>
+    </div>
+
+</body>
+<script src="/js/unlock-page.js"></script>
+<script src="/js/birthday-confetti.js"></script>
+
+</html>

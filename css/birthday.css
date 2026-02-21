@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Nunito', sans-serif;
 }
 
 body {
@@ -132,39 +131,13 @@ img.paw_float {
   right: -1%;
 }
 
-/* HERO */
-.hero {
-  background: linear-gradient(180deg, #ffffff, #fac4ff);
-  padding: 80px 20px;
-  text-align: center;
-}
 
-.hero h1 {
-  font-size: 40px;
-  color: #ff6fa5;
-}
-
-.hero p {
-  margin-top: 10px;
-  font-size: 18px;
-}
-
-.hero button {
-  margin-top: 20px;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 30px;
-  background: #ff6fa5;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-/* Cuenta Regresiva */
+/* Sección de Cuenta Regresiva */
 .contador {
   background: linear-gradient(0deg, #ffd6e8, #fff);
   padding: 80px 20px;
   text-align: center;
+  margin-bottom: 60px;
 }
 
 .contador h1 {
@@ -188,25 +161,34 @@ img.paw_float {
   cursor: pointer;
 }
 
-/* SECTION */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
+/* Sección de Dedicatoria */
+.dedicatoria {
+  padding: 40px 20px;
+  background: linear-gradient(0deg, #fff, #ffd6e8);
 
-.section h2 {
-  margin-bottom: 30px;
-  color: #ff6fa5;
-}
-
-/* GRID */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
-  max-width: 1000px;
-  margin: auto;
 }
+
+.dedicatoria h1 {
+  font-family: "Life Savers", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container-dedicatoria {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-dedicatoria p {
+  font-family: "Life Savers", serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: justify;
+}
+
 
 /* CARD */
 .card {

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    color: #333;
+    height: 100vh;
+}
+
+/* Sección de Cuenta Regresiva */
+.contador {
+    background: linear-gradient(0deg, #ffd6e8, #fff);
+    padding: 80px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contador h1 {
+    font-size: 40px;
+    color: #ff6fa5;
+}
+
+.contador p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.contador button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    background: #ff6fa5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* canvas de fondo */
+#fuegosCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+/* contenido encima */
+.contenido {
+    position: relative;
+    z-index: 1;
+}
+
+.container-timer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.container-timer .box {
+    text-align: center;
+
+}
+
+.container-timer .box .flip {
+    background: linear-gradient(#fcfcfc, #f8bfff);
+    border-radius: 15px;
+    width: 100px;
+    height: 120px;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 120px;
+    box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.container-timer .box .flip::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px) {
+
+    /* Sección de Cuenta Regresiva */
+    .contador {
+        padding: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .contador canvas {
+        width: 100%;
+    }
+
+    .contador img {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 20px;
+    }
+
+    .container-timer .box .flip {
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+        line-height: 50px;
+    }
+
+    .container-timer .box span {
+        font-size: 12px;
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    .container-timer .box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
