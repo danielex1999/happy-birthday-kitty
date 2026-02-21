@@ -103,6 +103,11 @@ body {
     background: rgba(0, 0, 0, 0.2);
 }
 
+    .contador img {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
 @media (max-width: 900px) {
 
     /* Sección de Cuenta Regresiva */
