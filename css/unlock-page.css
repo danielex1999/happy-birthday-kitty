@@ -30,6 +30,9 @@ body {
 .contador p {
     margin-top: 10px;
     font-size: 18px;
+    font-family: "Life Savers", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .contador button {
@@ -63,6 +66,9 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -131,4 +137,8 @@ body {
         align-items: center;
     }
 
+    .contador p {
+        font-size: 20px;
+        padding: 20px;
+    }
 }
