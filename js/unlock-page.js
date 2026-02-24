@@ -1,14 +1,14 @@
 const intervalo = setInterval(actualizar, 1000);
 
 function obtenerCumple() {
-    // 👉 FECHA FIJA (importante para que después no se reinicie)
     return new Date(2026, 1, 27, 0, 0, 0);
-    // return new Date(2026, 1, 19, 23, 48, 0);
+    // return new Date(2026, 1, 23, 20, 14, 0);
 }
 
-function mostrarCumple() {
-    document.getElementById("tiempo-de-espera").style.display = "none";
-    document.getElementById("cumple").style.display = "block";
+function redirigir() {
+    setTimeout(() => {
+        window.location.href = "../index.html";
+    }, 2000);
 }
 
 function actualizar() {
@@ -21,10 +21,9 @@ function actualizar() {
     const cumple = obtenerCumple();
     const diff = cumple - ahoraPeru;
 
-    // 🔥 SI YA PASÓ
     if (diff <= 0) {
         clearInterval(intervalo);
-        mostrarCumple();
+        redirigir();
         return;
     }
 
@@ -39,5 +38,4 @@ function actualizar() {
     document.getElementById("seconds").innerText = String(segundos).padStart(2, '0');
 }
 
-// 🔥 IMPORTANTE: ejecutar al cargar
 actualizar();
