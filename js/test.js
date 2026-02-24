@@ -2,13 +2,20 @@ const intervalo = setInterval(actualizar, 1000);
 
 function obtenerCumple() {
     // 👉 FECHA FIJA (importante para que después no se reinicie)
-    return new Date(2026, 1, 27, 20, 15, 0);
-    // return new Date(2026, 1, 19, 23, 48, 0);
+    // return new Date(2026, 1, 27, 20, 15, 0);
+    return new Date(2026, 1, 23, 21, 46, 0);
 }
 
 function mostrarCumple() {
     document.getElementById("tiempo-de-espera").style.display = "none";
     document.getElementById("cumple").style.display = "block";
+    document.getElementById("cake-wait").style.display = "none";
+    document.getElementById("cake-birth").style.display = "block";
+    document.getElementById("cake-birth").style.maxWidth = "100%";
+    document.getElementsByClassName("contador")[0].style.padding = "0px";
+    document.getElementsByClassName("contador")[0].style.paddingBottom = "20px";
+    document.getElementById("fuegos-button").innerText = "Feliz cumpleaños, Micaela 🎂💖";
+    
 }
 
 function actualizar() {

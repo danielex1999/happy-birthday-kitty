@@ -16,8 +16,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Life+Savers:wght@400;700;800&display=swap"
     rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Dancing+Script:wght@400..700&family=VT323&display=swap"
+    rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
 
 
 <body>
@@ -27,7 +30,6 @@
     <nav>
       <a href="#inicio-micaela">Inicio</a>
       <a href="#cuenta-regresiva">Cuenta regresiva</a>
-      <a href="#">Sobre ella</a>
       <a href="#dedicatoria">Mensaje</a>
       <a href="/pages/mapa-estelar.html">Sorpresa</a>
     </nav>
@@ -65,7 +67,8 @@
 
   <section class="contador" id="cuenta-regresiva">
     <canvas id="fuegosCanvas"></canvas>
-    <img src="/assets/images/hello-kitty-cake.png" alt="" srcset="">
+    <img id="cake-wait" src="/assets/images/hello-kitty-cake.png" alt="" srcset="">
+    <img id="cake-birth" src="/assets/images//backgrounds/birthdate.jpg" alt="" srcset="" style="display:none;">
     <div class="contenido">
       <div class="container-timer" id="tiempo-de-espera">
         <div class="box">
@@ -89,16 +92,21 @@
         </div>
       </div>
       <div id="cumple" style="display:none;">
-        <h2>🎉 Llegaste 💖</h2>
-        <p>Hoy celebramos tus 22 🎂✨</p>
-      </div>
-      <p>Contando cada segundo para celebrar tus 22 🎂💖</p>
 
-      <button onclick="lanzarFuegos()">🎆 Ver fuegos artificiales 🎆</button>
+        <h2 style="padding-left: 20px;padding-right: 20px; margin-bottom: 20px;">🎉 Llegaste… y hoy celebramos tus 22
+          🎂✨</h2>
+        <p style="padding-left: 20px;padding-right: 20px;">Se ha esperado con mucha ilusión este momento,
+          para celebrar, sonreír y recordar lo increíble que eres ✨</p>
+
+        <p style="padding-left: 20px;padding-right: 20px;">Que este nuevo año esté lleno de sonrisas, sueños cumplidos y
+          mucho amor</p>
+      </div>
+      <button id="fuegos-button" onclick="lanzarFuegos()">🎆 Ver fuegos artificiales 🎆</button>
     </div>
   </section>
 
   <section class="dedicatoria" id="dedicatoria">
+    <canvas id="confetti-canvas"></canvas>
     <h1>Feliz cumpleaños, Micaela 💖</h1>
     <div class="container-dedicatoria">
       <p>Este mensaje lo estás leyendo justo a las 12… pero en realidad lo pensé desde mucho antes.
@@ -123,7 +131,7 @@
       <p>Y hoy, más que desearte cosas bonitas (que sé que te las mereces todas), quiero que sientas lo especial que
         eres.
         Que te sientas querida, valorada… y acompañada.</p>
-
+      <img id="invitacion-22" src="/assets/images/imagen_2026-02-23_215633286-removebg-preview.png" alt="" srcset="">
       <p>Este es solo el comienzo de tu nuevo año… y ojalá esté lleno de momentos que te hagan feliz de verdad, de
         risas,
         de tranquilidad y de sueños que poco a poco se vayan cumpliendo.</p>
@@ -144,18 +152,6 @@
   </section>
 
 
-  <div id="contador">
-    <span id="days"></span> :
-    <span id="hours"></span> :
-    <span id="minutes"></span> :
-    <span id="seconds"></span>
-  </div>
-
-
-  <div id="cumple" style="display:none;">
-    <h1>🎉 Llegaste 🎂</h1>
-    <p>Es tu día 💖</p>
-  </div>
 
   <section class="section">
     <h2>🛍 Productos</h2>
@@ -181,6 +177,7 @@
 
 </body>
 <script src="/js/birthday-confetti.js"></script>
+<script src="/js/dedicatoria-confetti.js"></script>
 <script src="/js/test.js"></script>
 
 </html>
