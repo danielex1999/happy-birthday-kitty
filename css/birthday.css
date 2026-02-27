@@ -305,9 +305,6 @@ footer {
     bottom: -12%;
     left: 0%;
   }
-h3 .header-h3{
-  color: #7c4c51;
-}
   img.paw_float {
     position: absolute;
     width: 50px;
@@ -328,6 +325,7 @@ h3 .header-h3{
   h3.header-h3 {
     font-size: 20px;
     font-weight: 100;
+    color: #50373a;
   }
 
   h3.header-h3 p {
