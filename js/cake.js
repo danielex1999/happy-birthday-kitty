@@ -3,3 +3,13 @@ window.addEventListener("load", () => {
         window.location.href = "pages/loader.html";
     }, 24400);
 });
+
+ const audio = document.getElementById("bgMusic");
+ 
+  function startMusic() {
+    audio.volume = 0.4;
+    audio.play();
+    document.removeEventListener("click", startMusic);
+  }
+ 
+  document.addEventListener("click", startMusic);
