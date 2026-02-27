@@ -296,20 +296,20 @@ footer {
 
 
 /*Formato Laptop*/
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 1024px) and (max-width: 1920px) {
 
   /* Sección de Inicio */
   img.love_float {
     position: absolute;
     width: 50px;
-    bottom: 0%;
+    bottom: -12%;
     left: 0%;
   }
 
   img.paw_float {
     position: absolute;
     width: 50px;
-    bottom: 5%;
+    bottom: -7%;
     right: 0%;
   }
 
@@ -334,8 +334,8 @@ footer {
 
   /* Sección de Cuenta Regresiva */
   #cuenta-regresiva img {
-    width: 50%;
-    margin-bottom: 20px;
+    width: 40%;
+    margin-bottom: 3%;
   }
 
   .container-timer .box .flip {
@@ -350,6 +350,22 @@ footer {
     margin-top: 5px;
     text-align: center;
   }
+}
+/*Sección Dedicatoria*/
+#dedicatoria{
+  padding: 50px;
+  margin-top: -30px;
+}
+
+.container-dedicatoria p{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container-dedicatoria img#invitacion-22{
+  width: 25%;
+  margin-top: -150px;
+  margin-bottom: -40px;
 }
 
 /*Formato Movil*/
