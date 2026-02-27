@@ -1,7 +1,7 @@
 window.addEventListener("load", () => {
     setTimeout(() => {
         window.location.href = "pages/loader.html";
-    }, 24400);
+    }, 15000);
 });
 
 const audio = document.getElementById("bgMusic");
