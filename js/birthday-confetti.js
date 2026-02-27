@@ -65,3 +65,12 @@ function lanzarFuegos() {
 
     }, 250);
 }
+
+const btn = document.getElementById("fuegos-button")
+const audio = document.getElementById("bgMusic")
+
+btn.addEventListener("click",()=>
+{
+    audio.volume=0.4;
+    audio.play()
+})
