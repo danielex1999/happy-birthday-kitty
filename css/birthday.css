@@ -468,5 +468,8 @@ footer {
     align-items: center;
   }
 
-
+.container-dedicatoria img#invitacion-22{
+  margin-top: -20px;
+  margin-bottom: 0px;
+}
 }
